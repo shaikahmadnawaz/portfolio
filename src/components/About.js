@@ -18,7 +18,7 @@ const About = () => {
           <div className="flex justify-center">
             <a
               href="#contact"
-              className="inline-flex text-black bg-yellow-400 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-300 rounded text-lg"
+              className="inline-flex text-black bg-yellow-300 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-400 rounded text-lg"
             >
               Work With Me
             </a>
