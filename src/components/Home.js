@@ -8,7 +8,7 @@ const Home = () => {
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
             Hi, I'm Shaik Ahmad Nawaz.
             <br className="hidden lg:inline-block" />I love to build amazing
-            apps.
+            websites.
           </h1>
           <p className="mb-8 leading-relaxed">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
@@ -20,7 +20,7 @@ const Home = () => {
               href="#contact"
               className="inline-flex text-black bg-yellow-300 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-400 rounded text-lg"
             >
-              Work With Me
+              My Resume
             </a>
             <a
               href="#projects"
