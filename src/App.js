@@ -7,7 +7,7 @@ import Skills from "./components/Skills";
 
 function App() {
   return (
-    <main>
+    <main className="text-gray-400 bg-black body-font">
       <Navbar />
       <About />
       <Projects />
