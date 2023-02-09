@@ -8,12 +8,12 @@ export const projects = [
     link: "https://workout-tracker.cyclic.app/signup",
   },
   {
-    title: "React Tracks",
-    subtitle: "React and Python",
+    title: "REAL-TIME CODE EDITOR",
+    subtitle: "React and Web Sockets",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "project.webp",
-    link: "https://reedbarger.com",
+      "Developed a real-time code editor using React, Node.js, and Express.js. Implemented Web Sockets using socket.io for real-time collaboration, Added feature for creating rooms for multiple users to work on the same code simultaneously.",
+    image: "code-editor.png",
+    link: "https://github.com/shaikahmadnawaz/realtime-code-editor",
   },
   {
     title: "DevChat",
