@@ -16,28 +16,20 @@ export const projects = [
     link: "https://github.com/shaikahmadnawaz/realtime-code-editor",
   },
   {
-    title: "DevChat",
-    subtitle: "React and Firebase",
+    title: "REACT WEATHER APP",
+    subtitle: "React and Tailwind CSS",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "project.webp",
-    link: "https://jsbootcamp.com",
+      "Built a weather application using ReactJS and the OpenWeatherMap API.",
+    image: "react-weather-app.png",
+    link: "https://react-weather-display-application.vercel.app/",
   },
   {
-    title: "Epic Todo App",
-    subtitle: "React Hooks",
+    title: "React Todo App",
+    subtitle: "React and Firbase",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "project.webp",
-    link: "https://pythonbootcamp.com",
-  },
-  {
-    title: "Epic Todo App",
-    subtitle: "React Hooks",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "project.webp",
-    link: "https://pythonbootcamp.com",
+      "Developed a Todo application using React and Firebase. Implemented features such as task marking as complete, task editing, and task deletion",
+    image: "react-todo-firebase.png",
+    link: "https://react-todo-firebase-app.vercel.app/",
   },
 ];
 
