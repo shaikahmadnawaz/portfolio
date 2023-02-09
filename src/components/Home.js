@@ -10,14 +10,11 @@ const Home = () => {
             <br className="hidden lg:inline-block" />I love to build amazing
             websites.
           </h1>
-          <p className="mb-8 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-            laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
-            Laborum, voluptas natus?
-          </p>
+          <p className="mb-8 leading-relaxed">Full Stack Web Developer</p>
           <div className="flex justify-center">
             <a
-              href="#contact"
+              download
+              href="ShaikAhmadNawazResume.pdf"
               className="inline-flex text-black bg-yellow-300 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-400 rounded text-lg"
             >
               My Resume

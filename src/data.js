@@ -35,27 +35,81 @@ export const projects = [
 
 export const skills = [
   {
-    skill: "HTML",
+    skill: "Java",
+  },
+  {
+    skill: "Python",
   },
   {
     skill: "HTML",
   },
   {
-    skill: "HTML",
+    skill: "CSS",
   },
   {
-    skill: "HTML",
+    skill: "JavaScript",
   },
   {
-    skill: "HTML",
+    skill: "C",
   },
   {
-    skill: "HTML",
+    skill: "SQL",
   },
   {
-    skill: "HTML",
+    skill: "React",
   },
   {
-    skill: "HTML",
+    skill: "Tailwind CSS",
+  },
+  {
+    skill: "Styled-components",
+  },
+  {
+    skill: "Node.js",
+  },
+  {
+    skill: "Express.js",
+  },
+  {
+    skill: "Redux Toolkit",
+  },
+  {
+    skill: "REST API",
+  },
+  {
+    skill: "Firebase",
+  },
+  {
+    skill: "MongoDB",
+  },
+  {
+    skill: "MySQL",
+  },
+  {
+    skill: "Git",
+  },
+  {
+    skill: "GitHub",
+  },
+  {
+    skill: "AWS",
+  },
+  {
+    skill: "GCP",
+  },
+  {
+    skill: "Docker",
+  },
+  {
+    skill: "Postman",
+  },
+  {
+    skill: "Figma",
+  },
+  {
+    skill: "Linux",
+  },
+  {
+    skill: "Visual Studio Code",
   },
 ];
