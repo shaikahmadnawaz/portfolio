@@ -3,7 +3,7 @@ import React from "react";
 export default function Contact() {
   return (
     <section id="contact" className="relative">
-      <div className="container px-5 py-10 mx-auto sm:flex-nowrap flex-wrap justify-center">
+      <div className="container px-5 py-10 border mx-auto sm:flex-nowrap flex-wrap justify-center">
         <div
           name="contact"
           className="flex flex-col justify-center align-center md:ml-auto w-full md:py-8 mt-8 md:mt-0"
