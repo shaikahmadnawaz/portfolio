@@ -4,11 +4,9 @@ export default function Contact() {
   return (
     <section id="contact" className="relative">
       <div className="container px-5 py-10 mx-auto sm:flex-nowrap flex-wrap justify-center">
-        <div className=" bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-center sm:flex-nowrap relative"></div>
-        <form
-          netlify
+        <div
           name="contact"
-          className="flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
+          className="flex flex-col justify-center align-center md:ml-auto w-full md:py-8 mt-8 md:mt-0"
         >
           <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
             Contact Me
@@ -43,7 +41,7 @@ export default function Contact() {
               </a>
             </div>
           </div>
-        </form>
+        </div>
       </div>
     </section>
   );
