@@ -1,4 +1,4 @@
-import contactMe from "../utils/contactme";
+import contactMe from "../utils/contactMe";
 
 const ContactMe = () => {
   return (

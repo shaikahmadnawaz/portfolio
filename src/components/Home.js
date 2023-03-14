@@ -5,25 +5,26 @@ const Home = () => {
     <section id="about">
       <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-            Hi, I'm Shaik Ahmad Nawaz.
-            <br className="hidden lg:inline-block" />I love to build amazing
-            websites.
-          </h1>
-          <p className="mb-8 leading-relaxed">Full Stack Web Developer</p>
+          <h2 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+            Hi there, I'm{" "}
+            <span className="inline-block text-yellow-300">Nawaz</span>
+          </h2>
+          <p className="text-white mb-8 text-base md:text-lg">
+            I'm a Full Stack Web Developer.
+          </p>
           <div className="flex justify-center">
             <a
               download
               href="ShaikAhmadNawazResume.pdf"
-              className="inline-flex text-black bg-yellow-300 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-400 rounded text-lg"
+              className="inline-flex items-center h-14 px-6 py-3 font-medium tracking-wide text-black transition duration-200 rounded shadow-md bg-yellow-400 hover:bg-yellow-300"
             >
               My Resume
             </a>
             <a
               href="#projects"
-              className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"
+              className="ml-4 inline-flex items-center h-14 px-6 py-3 font-medium tracking-wide transition duration-200 shadow-md text-gray-400 bg-gray-800 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"
             >
-              See My Past Work
+              See My Work
             </a>
           </div>
         </div>
