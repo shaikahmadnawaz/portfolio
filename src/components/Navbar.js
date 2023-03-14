@@ -38,7 +38,8 @@ const Navbar = () => {
           <a
             href="https://shaikahmadnawaz.hashnode.dev/"
             className="mr-5 hover:text-white"
-            onClick={handleScroll}
+            target="_blank"
+            rel="noreferrer"
           >
             Blogs
           </a>
