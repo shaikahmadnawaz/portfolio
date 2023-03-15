@@ -1,31 +1,38 @@
 import React from "react";
-import { skills } from "../data";
+import skills from "../utils/skills";
 
 export default function Skills() {
   return (
-    <section id="skills">
-      <div className="container px-5 py-10 mx-auto">
-        <div className="text-center mb-20">
-          {/* <ChipIcon className="w-10 inline-block mb-4" /> */}
-          <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4">
-            Skills &amp; Technologies
-          </h1>
-          <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-            These are the things that I work with regularly
-          </p>
-        </div>
-        <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
-          {skills.map((skill) => (
-            <div key={skill} className="p-2 sm:w-1/2 w-full">
-              <div className="bg-gray-800 rounded flex p-4 h-full items-center">
-                {/* <BadgeCheckIcon className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" /> */}
-                <span className="title-font font-medium text-white">
-                  {skill.skill}
-                </span>
-              </div>
+    <section
+      className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
+      id="skills"
+    >
+      <div className="max-w-xl mb-10 md:mx-auto text-center lg:max-w-2xl md:mb-12">
+        <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-white sm:text-4xl md:mx-auto">
+          <span className="relative inline-block">
+            <span className="relative">My Skills</span>
+          </span>
+        </h2>
+      </div>
+      <div className="grid gap-8 row-gap-8 lg:grid-cols-3">
+        {skills.map((skill, index) => (
+          <div key={index} className="text-center">
+            <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-black mx-auto sm:w-24 sm:h-24">
+              <i className={skill.icon} aria-hidden="true"></i>
             </div>
-          ))}
-        </div>
+            <h6 className="mb-2 font-semibold leading-5 border-b-2 pb-4">
+              {skill.title}
+            </h6>
+            {skill.skills.map((item, index) => (
+              <p
+                key={index}
+                className="max-w-md mb-3 text-sm text-white mx-auto"
+              >
+                {item}
+              </p>
+            ))}
+          </div>
+        ))}
       </div>
     </section>
   );
