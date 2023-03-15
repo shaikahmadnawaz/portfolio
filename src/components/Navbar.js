@@ -3,7 +3,7 @@ import { handleScroll } from "../utils/handleScroll";
 
 const Navbar = () => {
   return (
-    <header className="bg-black md:sticky top-0 z-10">
+    <nav className="bg-black shadow-md md:sticky top-0 z-10">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <a
           href="#about"
@@ -52,7 +52,7 @@ const Navbar = () => {
           </a>
         </nav>
       </div>
-    </header>
+    </nav>
   );
 };
 

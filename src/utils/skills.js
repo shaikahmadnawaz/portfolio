@@ -1,7 +1,7 @@
 const skills = [
   {
     icon: "text-yellow-300 text-4xl fab fa-html5",
-    title: "FrontEnd",
+    title: "Frontend",
     skills: [
       "HTML",
       "CSS",
@@ -16,7 +16,7 @@ const skills = [
   },
   {
     icon: "text-yellow-300 text-4xl fa-solid fa-code",
-    title: "BackEnd",
+    title: "Backend",
     skills: [
       "Node.js",
       "Express.js",

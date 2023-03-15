@@ -1,5 +1,4 @@
 import React from "react";
-import { handleScroll } from "../utils/handleScroll";
 
 const Home = () => {
   return (
@@ -23,7 +22,6 @@ const Home = () => {
             </a>
             <a
               href="#projects"
-              onClick={handleScroll}
               className="ml-4 inline-flex items-center h-14 px-6 py-3 font-medium tracking-wide transition duration-200 shadow-md text-gray-400 bg-gray-800 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"
             >
               See My Work
