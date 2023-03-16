@@ -4,8 +4,8 @@ import { handleScroll } from "../utils/handleScroll";
 const Home = () => {
   return (
     <section id="about">
-      <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
-        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <div className="container mx-auto flex md:justify-around px-10 py-20 lg:mt-16 lg:flex-row flex-col items-center">
+        <div className="justify-self-center md:w-1/2 lg:w-1/3 flex flex-col lg:items-start lg:text-left mb-16 lg:mb-0 items-center text-center">
           <h2 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
             Hi there, I'm{" "}
             <span className="inline-block text-yellow-300">Nawaz</span>
@@ -30,7 +30,7 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <div className="justify-self-center lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <img
             className="object-cover object-center rounded"
             alt="hero"
