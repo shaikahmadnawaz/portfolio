@@ -1,8 +1,18 @@
 import WorkoutTracker from "../images/workout-tracker.png";
 import CodeEditor from "../images/code-editor.png";
 import WeatherApp from "../images/react-weather-app.png";
+import VConnectGlobe from "../images/vconnectglobe.png";
 
 const projects = [
+  {
+    title: "VCONNECT GLOBE",
+    description:
+      "Built a study abroad mentorship web application using React and Tailwind CSS, implementing responsive design. Received positive feedback from the client, The client praised my technical and professional abilities and provided a glowing recommendation for future clients.",
+    image: VConnectGlobe,
+    technologies: ["React", "Tailwind CSS", "Git", "GitHub", "Hostinger"],
+    github: "https://github.com/shaikahmadnawaz/vconnectglobe",
+    live: "https://vconnectglobe.com/",
+  },
   {
     title: "WORKOUT TRACKER",
     description:
