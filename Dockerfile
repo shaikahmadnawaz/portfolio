@@ -1,23 +1,23 @@
 # Use the latest version of Node.js
 FROM node:alpine
 
-# Set the working directory to the app directory
+# Set the working directory to /app
 WORKDIR /app
 
-# Copy the package.json and package-lock.json files to the app directory
-COPY react-portfolio/package*.json ./
+# Copy the package.json and package-lock.json to the working directory
+COPY ./package*.json ./
 
-# Install the app dependencies
+# Install the dependencies
 RUN npm install
 
-# Copy the React application files to the app directory
-COPY react-portfolio/ ./
+# Copy the remaining application files to the working directory
+COPY . .
 
-# Build the React application
+# Build the application
 RUN npm run build
 
-# Expose port 3000
+# Expose port 3000 for the application
 EXPOSE 3000
 
 # Start the application
-CMD ["npm", "start"]
+CMD [ "npm", "run", "start" ]
