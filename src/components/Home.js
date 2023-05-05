@@ -15,8 +15,9 @@ const Home = () => {
           </p>
           <div className="flex justify-center">
             <a
-              download
-              href="ShaikAhmadNawazResume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              href="https://drive.google.com/drive/folders/1A6pzD7WIt99v-vbEtiJ7Iul3KuqSvTDv?usp=share_link"
               className="inline-flex items-center h-14 px-6 py-3 font-medium tracking-wide text-black transition duration-200 rounded shadow-md bg-yellow-400 hover:bg-yellow-300"
             >
               My Resume
