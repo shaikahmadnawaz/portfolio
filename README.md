@@ -13,15 +13,15 @@ The first step is to launch an EC2 instance on AWS. Here's how you can do it:
 
 1. Log in to your AWS console and navigate to the EC2 service.
 
-   ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683314388306/ce135856-3df7-450b-a1e2-0432df43a729.png align="center")
+   [](https://cdn.hashnode.com/res/hashnode/image/upload/v1683314388306/ce135856-3df7-450b-a1e2-0432df43a729.png align="center")
 
 2. Click on the "Launch Instance" button to start the instance launch wizard.
 
-   ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683314548574/c73cd954-3457-4376-89d9-d3a604b0efb4.png align="center")
+   [](https://cdn.hashnode.com/res/hashnode/image/upload/v1683314548574/c73cd954-3457-4376-89d9-d3a604b0efb4.png align="center")
 
 3. Choose "Ubuntu Server" as the Amazon Machine Image (AMI).
 
-   ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683314717073/65e93e81-cf98-4541-b49b-7dec65daec5c.png align="center")
+   [](https://cdn.hashnode.com/res/hashnode/image/upload/v1683314717073/65e93e81-cf98-4541-b49b-7dec65daec5c.png align="center")
 
 4. Creating or Selecting a Key Pair for EC2 Instance:
 
@@ -38,28 +38,28 @@ The first step is to launch an EC2 instance on AWS. Here's how you can do it:
 
    Once you have created or selected a key pair, you can continue with the instance launch process.
 
-   ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683315053187/4a08d7b3-b7e2-4e35-aeb6-06f9424f93ab.png align="center")
+   [](https://cdn.hashnode.com/res/hashnode/image/upload/v1683315053187/4a08d7b3-b7e2-4e35-aeb6-06f9424f93ab.png align="center")
 
 5. Select an instance type and configure the instance details as per your requirements.
 6. In the "Configure Security Group" step, create a new security group and add rules to allow inbound traffic on port 22 (for SSH access) and ports 80 and 443 (for HTTP and HTTPS traffic).
 
-   ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683315215705/e7cbc6a1-42f0-441e-8191-f3729ab601b7.png align="center")
+   [](https://cdn.hashnode.com/res/hashnode/image/upload/v1683315215705/e7cbc6a1-42f0-441e-8191-f3729ab601b7.png align="center")
 
 7. Review the instance details and launch the instance.
 
-   ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683315705056/8551b026-7876-418e-8447-ebcf914dbc88.png align="center")
+   [](https://cdn.hashnode.com/res/hashnode/image/upload/v1683315705056/8551b026-7876-418e-8447-ebcf914dbc88.png align="center")
 
 ## Step 2: Connect to the instance
 
 1. Open a terminal window on your local machine.
 
-   ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683316610386/5257c746-eddf-4397-8709-23c9b3398ea6.png align="center")
+   [](https://cdn.hashnode.com/res/hashnode/image/upload/v1683316610386/5257c746-eddf-4397-8709-23c9b3398ea6.png align="center")
 
 2. Use the SSH command to connect to your EC2 instance using the public IP address or DNS name of the instance. The command should be in the following format:
 
-   ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683316213513/c758afe0-55c2-4561-ac03-3d8d79d91404.png align="center")
+   [](https://cdn.hashnode.com/res/hashnode/image/upload/v1683316213513/c758afe0-55c2-4561-ac03-3d8d79d91404.png align="center")
 
-   ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683317271434/c5f6fd02-bb4f-4495-9f33-3232d83f266a.png align="center")
+   [](https://cdn.hashnode.com/res/hashnode/image/upload/v1683317271434/c5f6fd02-bb4f-4495-9f33-3232d83f266a.png align="center")
 
    Execute the below command in the same directory where we key(secret-key.pem) was downloaded.
 
@@ -69,7 +69,7 @@ The first step is to launch an EC2 instance on AWS. Here's how you can do it:
    ssh -i "secret-key.pem" ubuntu@ec2-3-108-41-225.ap-south-1.compute.amazonaws.com
    ```
 
-   ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683317091520/6fb7b86c-b477-4b4c-b656-bed33eb026eb.png align="center")
+   [](https://cdn.hashnode.com/res/hashnode/image/upload/v1683317091520/6fb7b86c-b477-4b4c-b656-bed33eb026eb.png align="center")
 
    Hurray, Now we are connected to the remote server(ec2 instance) 🥳
 
@@ -83,7 +83,7 @@ Now that you are connected to the instance, the next step is to install Node.js 
    sudo apt-get update
    ```
 
-   ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683317632288/428575bc-03dd-4b51-b6db-50551dab04e4.png align="center")
+   [](https://cdn.hashnode.com/res/hashnode/image/upload/v1683317632288/428575bc-03dd-4b51-b6db-50551dab04e4.png align="center")
 
 2. Install Node.js and Git using the following commands:
 
@@ -93,7 +93,7 @@ Now that you are connected to the instance, the next step is to install Node.js 
    sudo apt-get install git
    ```
 
-   ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683317899852/83f4deae-0b04-40d7-bb7f-187143df5621.png align="center")
+   [](https://cdn.hashnode.com/res/hashnode/image/upload/v1683317899852/83f4deae-0b04-40d7-bb7f-187143df5621.png align="center")
 
 ## Step 4: Clone your React application
 
@@ -105,7 +105,7 @@ Clone your React application from the Git repository using the following command
 git clone https://github.com/shaikahmadnawaz/react-portfolio
 ```
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683318070207/d8afd937-c8ff-433e-bfb0-2adccbdab311.png align="center")
+[](https://cdn.hashnode.com/res/hashnode/image/upload/v1683318070207/d8afd937-c8ff-433e-bfb0-2adccbdab311.png align="center")
 
 Install the node packages:
 
@@ -113,7 +113,7 @@ Install the node packages:
 npm install
 ```
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683318345948/e682594b-e7e6-41ab-a75f-65bae216b0a3.png align="center")
+[](https://cdn.hashnode.com/res/hashnode/image/upload/v1683318345948/e682594b-e7e6-41ab-a75f-65bae216b0a3.png align="center")
 
 ## Step 5: Start the application
 
@@ -121,7 +121,7 @@ npm install
 npm start
 ```
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683318472256/79c5ce75-d723-40d9-909e-e526aadc4925.png align="center")
+[](https://cdn.hashnode.com/res/hashnode/image/upload/v1683318472256/79c5ce75-d723-40d9-909e-e526aadc4925.png align="center")
 
 In your browser instead of `localhost:3000` add this `3.108.41.225:3000`
 
@@ -129,21 +129,21 @@ In your browser instead of `localhost:3000` add this `3.108.41.225:3000`
 PublicIPv4address:port
 ```
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683319149187/f5404efc-4ee7-46a8-8d57-1fa143bdef5e.png align="center")
+[](https://cdn.hashnode.com/res/hashnode/image/upload/v1683319149187/f5404efc-4ee7-46a8-8d57-1fa143bdef5e.png align="center")
 
 Click on **security groups**, then go-to **inbound rules** and add one like below and include the port in it, this is required.
 
 **Inbound rules** in Security Groups for EC2 are a set of network access rules that control incoming traffic to your EC2 instances. They allow you to specify which protocols, ports, and IP addresses are allowed to connect to your instances.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683319212827/8058eadd-8817-4170-b94d-5e0373122d23.png align="center")
+[](https://cdn.hashnode.com/res/hashnode/image/upload/v1683319212827/8058eadd-8817-4170-b94d-5e0373122d23.png align="center")
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683318912800/84515f0a-4915-4c43-bd0d-c4439c6ec3c5.png align="center")
+[](https://cdn.hashnode.com/res/hashnode/image/upload/v1683318912800/84515f0a-4915-4c43-bd0d-c4439c6ec3c5.png align="center")
 
 The project is deployed on AWS 🎉
 
 Don't forget to terminate that instance after work, or else you will be billed 😅
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683319441202/14164e9a-8c9d-4e28-8904-a8f0dfdbcd3a.png align="center")
+[](https://cdn.hashnode.com/res/hashnode/image/upload/v1683319441202/14164e9a-8c9d-4e28-8904-a8f0dfdbcd3a.png align="center")
 
 ## Conclusion
 
