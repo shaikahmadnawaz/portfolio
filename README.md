@@ -13,15 +13,15 @@ The first step is to launch an EC2 instance on AWS. Here's how you can do it:
 
 1. Log in to your AWS console and navigate to the EC2 service.
 
-   [](https://cdn.hashnode.com/res/hashnode/image/upload/v1683314388306/ce135856-3df7-450b-a1e2-0432df43a729.png)
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683314388306/ce135856-3df7-450b-a1e2-0432df43a729.png)
 
 2. Click on the "Launch Instance" button to start the instance launch wizard.
 
-   [](https://cdn.hashnode.com/res/hashnode/image/upload/v1683314548574/c73cd954-3457-4376-89d9-d3a604b0efb4.png)
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683314548574/c73cd954-3457-4376-89d9-d3a604b0efb4.png)
 
 3. Choose "Ubuntu Server" as the Amazon Machine Image (AMI).
 
-   [](https://cdn.hashnode.com/res/hashnode/image/upload/v1683314717073/65e93e81-cf98-4541-b49b-7dec65daec5c.png)
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683314717073/65e93e81-cf98-4541-b49b-7dec65daec5c.png)
 
 4. Creating or Selecting a Key Pair for EC2 Instance:
 
@@ -38,40 +38,40 @@ The first step is to launch an EC2 instance on AWS. Here's how you can do it:
 
    Once you have created or selected a key pair, you can continue with the instance launch process.
 
-   [](https://cdn.hashnode.com/res/hashnode/image/upload/v1683315053187/4a08d7b3-b7e2-4e35-aeb6-06f9424f93ab.png)
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683315053187/4a08d7b3-b7e2-4e35-aeb6-06f9424f93ab.png)
 
 5. Select an instance type and configure the instance details as per your requirements.
 6. In the "Configure Security Group" step, create a new security group and add rules to allow inbound traffic on port 22 (for SSH access) and ports 80 and 443 (for HTTP and HTTPS traffic).
 
-   [](https://cdn.hashnode.com/res/hashnode/image/upload/v1683315215705/e7cbc6a1-42f0-441e-8191-f3729ab601b7.png)
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683315215705/e7cbc6a1-42f0-441e-8191-f3729ab601b7.png)
 
 7. Review the instance details and launch the instance.
 
-   [](https://cdn.hashnode.com/res/hashnode/image/upload/v1683315705056/8551b026-7876-418e-8447-ebcf914dbc88.png)
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683315705056/8551b026-7876-418e-8447-ebcf914dbc88.png)
 
 ## Step 2: Connect to the instance
 
 1. Open a terminal window on your local machine.
 
-   [](https://cdn.hashnode.com/res/hashnode/image/upload/v1683316610386/5257c746-eddf-4397-8709-23c9b3398ea6.png)
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683316610386/5257c746-eddf-4397-8709-23c9b3398ea6.png)
 
 2. Use the SSH command to connect to your EC2 instance using the public IP address or DNS name of the instance. The command should be in the following format:
 
-   [](https://cdn.hashnode.com/res/hashnode/image/upload/v1683316213513/c758afe0-55c2-4561-ac03-3d8d79d91404.png)
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683316213513/c758afe0-55c2-4561-ac03-3d8d79d91404.png)
 
-   [](https://cdn.hashnode.com/res/hashnode/image/upload/v1683317271434/c5f6fd02-bb4f-4495-9f33-3232d83f266a.png)
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683317271434/c5f6fd02-bb4f-4495-9f33-3232d83f266a.png)
 
-   Execute the below command in the same directory where we key(secret-key.pem) was downloaded.
+Execute the below command in the same directory where we key(secret-key.pem) was downloaded.
 
-   ```bash
-   ssh -i <path-to-private-key> ubuntu@<public-ip-address>
+```bash
+ssh -i <path-to-private-key> ubuntu@<public-ip-address>
 
-   ssh -i "secret-key.pem" ubuntu@ec2-3-108-41-225.ap-south-1.compute.amazonaws.com
-   ```
+ssh -i "secret-key.pem" ubuntu@ec2-3-108-41-225.ap-south-1.compute.amazonaws.com
+```
 
-   [](https://cdn.hashnode.com/res/hashnode/image/upload/v1683317091520/6fb7b86c-b477-4b4c-b656-bed33eb026eb.png)
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683317091520/6fb7b86c-b477-4b4c-b656-bed33eb026eb.png)
 
-   Hurray, Now we are connected to the remote server(ec2 instance) 🥳
+Hurray, Now we are connected to the remote server(ec2 instance) 🥳
 
 ## Step 3: Install Node.js and Git
 
@@ -83,7 +83,7 @@ Now that you are connected to the instance, the next step is to install Node.js 
    sudo apt-get update
    ```
 
-   [](https://cdn.hashnode.com/res/hashnode/image/upload/v1683317632288/428575bc-03dd-4b51-b6db-50551dab04e4.png)
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683317632288/428575bc-03dd-4b51-b6db-50551dab04e4.png)
 
 2. Install Node.js and Git using the following commands:
 
