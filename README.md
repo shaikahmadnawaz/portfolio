@@ -93,7 +93,7 @@ Now that you are connected to the instance, the next step is to install Node.js 
    sudo apt-get install git
    ```
 
-   [](https://cdn.hashnode.com/res/hashnode/image/upload/v1683317899852/83f4deae-0b04-40d7-bb7f-187143df5621.png)
+   ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683317899852/83f4deae-0b04-40d7-bb7f-187143df5621.png)
 
 ## Step 4: Clone your React application
 
