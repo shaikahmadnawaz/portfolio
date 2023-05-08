@@ -1,5 +1,5 @@
 # Use the latest version of Node.js
-FROM node:alpine
+FROM node:14-alpine as builder
 
 # Set the working directory to /app
 WORKDIR /app
@@ -16,8 +16,6 @@ COPY . .
 # Build the application
 RUN npm run build
 
-# Expose port 3000 for the application
-EXPOSE 3000
-
-# Start the application
-CMD [ "npm", "run", "start" ]
+FROM nginx
+EXPOSE 80
+COPY --from=builder /app/build /usr/share/nginx/html
